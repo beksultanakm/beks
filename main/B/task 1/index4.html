@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 - Table and Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Task 1</a>
+    <a href="task2.html">Task 2</a>
+    <a href="task3.html">Task 3</a>
+    <a href="task4.html">Task 4</a>
+  </nav>
+
+  <header id="main-header">
+    <h1 class="main-name">Task 4: Table and Form</h1>
+  </header>
+
+  <main>
+
+    <section class="about">
+      <h2 id="table-title">Student Grades</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">beksultan</td> 
+            <td>Math</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>90</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>Dias</td>
+            <td>Physics</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>Akbota</td>
+            <td>History</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td colspan="2">Average</td>
+            <td>86.25</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <form id="feedback-form" action="#" method="post">
+      <h2>Feedback Form</h2>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="role">Role</label>
+      <select id="role" name="role">
+        <option>Student</option>
+        <option>Teacher</option>
+        <option>Other</option>
+      </select>
+
+      <label>Did you like this course?</label><br>
+      <label class="option"><input type="radio" name="like" value="yes"> Yes</label>
+      <label class="option"><input type="radio" name="like" value="no"> No</label>
+
+      <br><br>
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Your comments..."></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Your Name</p>
+  </footer>
+
+</body>
+</html>
